@@ -1,0 +1,50 @@
+
+browser: "casperjs"
+
+domains:
+  current:  "https://www.thoughtworks.com"
+  new:      "http://104.130.70.123"
+
+
+paths:
+
+  home:       /
+  radar:    /radar
+  services:   /services
+#  radar-techniques:   /radar/techniques
+#  events:     /events
+#  about-us:   /about-us
+#  careers:    /careers
+#  news:       /news
+#  contact-us: /contact-us
+#  spanish:    /es
+#  portuguese: /pt
+#  deutsch:    /de
+#  chinese:    /cn
+
+#
+#paths:
+#  home:
+#    path: "/insights"
+#    selector: ".cornerstone-article"
+
+screen_widths:
+#  - 320x4500
+#  - 480x4500
+#  - 768x4500
+  - 1024x6000
+
+#before_capture: 'javascript/disable--phantom.js'
+
+directory: 'shots'
+
+fuzz: '20%'
+
+threshold: 5
+
+gallery:
+  template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+mode: diffs_first
